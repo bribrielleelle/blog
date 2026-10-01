@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-fredoka: 'Fredoka', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-aqua: #27F2E4;
+  --color-aqua-hover: #12e3d4;
+  --color-aqua-subtle: rgba(39, 242, 228, 0.16);
+  --color-taupe: #91735E;
+  --color-taupe-dark: #6C5544;
+  --color-taupe-light: #F4EFEA;
+  --color-cream: #FAF7F2;
+  --color-cream-subtle: #F3EFE7;
+  --color-ink: #24201D;
+  --color-ink-muted: #6B625B;
+  --color-ink-faint: #9C938B;
+  --color-border-subtle: #E8E1D5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+.polka-bg {
+  background-color: #FAF7F2;
+  background-image: 
+    radial-gradient(circle, #24201D 2.5px, transparent 2.5px),
+    radial-gradient(circle, #24201D 2.5px, transparent 2.5px);
+  background-size: 34px 34px;
+  background-position: 0 0, 17px 17px;
+  background-attachment: fixed;
+  color: #24201D;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Card solid surface that sits cleanly atop the dotted background */
+.card-surface {
+  background-color: #FFFFFF;
+  border: 2px solid #24201D;
+  box-shadow: 4px 4px 0px 0px #24201D;
+}
+
+.card-surface-soft {
+  background-color: #FFFFFF;
+  border: 1.5px solid #24201D;
+  box-shadow: 3px 3px 0px 0px rgba(36, 32, 29, 0.15);
+}
+
+.card-blush {
+  background-color: #FFDCE3;
+  border: 2px solid #24201D;
+  box-shadow: 4px 4px 0px 0px #24201D;
+}
+
+.card-aqua {
+  background-color: #27F2E4;
+  border: 2px solid #24201D;
+  box-shadow: 4px 4px 0px 0px #24201D;
+}
+
+/* Fredoka for UI, Headings, Buttons, Badges */
+.font-fredoka {
+  font-family: var(--font-fredoka);
+}
+
+.font-instrument {
+  font-family: var(--font-serif);
+}
+
+.font-body-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom drop-cap for editorial story starts */
+.editorial-drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-fredoka);
+  font-size: 3.5rem;
+  line-height: 0.8;
+  margin-top: 0.15rem;
+  margin-right: 0.75rem;
+  color: #91735E;
+  font-weight: 600;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #91735E;
+}

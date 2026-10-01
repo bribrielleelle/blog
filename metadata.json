@@ -1,0 +1,6 @@
+{
+  "name": "Brielle Davis — Notes on Living & Design",
+  "description": "A modern editorial personal blog exploring mindful design, creative craftsmanship, slow living, and digital culture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
